@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Encrypt your message</title>
+        <link rel="stylesheet" href="style.css">
+        <script type="importmap">
+            {
+                "imports": {
+                    "node-rsa": "https://unpkg.com/browse/node-rsa@1.0.6/",
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <form action="https://formspree.io/f/xrgjngvy" method="POST" id="contact-form">
+                <h3> Encrypt your message</h3>
+                <input name="Recivers Email" type="email" id="email" placeholder="Receivers email." required>
+                <input  name="Recivers Email"  type="tel" id="phoneNo" placeholder="Receivers Phone number." required>
+                <textarea name="Recivers Message"  id="Encrypted-Message" cols="70" rows="10" placeholder="Message to be encrypted"></textarea>
+                <button type="submit">Encrypt Message</button>
+               
+                
+
+            </form>
+
+        </div>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script type="module" src="bundle.js"></script>
+       
+    </body>
+</html>
+
